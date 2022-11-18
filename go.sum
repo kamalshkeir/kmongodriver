@@ -9,6 +9,8 @@ github.com/kamalshkeir/klog v1.0.0 h1:xZbYuYlDsEG5gfHPGNVms7wQmUFJCV0Uo2pwwaJBbw
 github.com/kamalshkeir/klog v1.0.0/go.mod h1:Plp8wNXIbDTSgJmVOF/GiUftKihGqL6jvRAXPclbmV8=
 github.com/kamalshkeir/kmap v1.0.3 h1:UUhU3vHHPHgzvmRCoEHaNSgpEiKt5+Dh7VsIV3zkMJg=
 github.com/kamalshkeir/kmap v1.0.3/go.mod h1:79FSu6AMNitrvpdc5/IiUCDAdaEi+RfPeEWJU6tjRB0=
+github.com/kamalshkeir/kutils v1.0.0 h1:09o20l9sz3uErsugx4MuzWvPoK7tJ8Ry5x6Y2mhBShQ=
+github.com/kamalshkeir/kutils v1.0.0/go.mod h1:wsbGgTmVz5t96npofdQ990ZUITlKHweWx2TqxFRv5Ck=
 github.com/klauspost/compress v1.13.6 h1:P76CopJELS0TiO2mebmnzgWaajssP/EszplttgQxcgc=
 github.com/klauspost/compress v1.13.6/go.mod h1:/3/Vjq9QcHkK5uEr5lBEmyoZ1iFhe47etQ6QUkpK6sk=
 github.com/kr/pretty v0.1.0 h1:L/CwN0zerZDmRFUapSPitk6f+Q3+0za1rQkzVuMiMFI=
@@ -47,8 +49,9 @@ golang.org/x/sys v0.0.0-20210423082822-04245dca01da/go.mod h1:h1NjWce9XRLGQEsW7w
 golang.org/x/sys v0.0.0-20210615035016-665e8c7367d1/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/term v0.0.0-20201126162022-7de9c90e9dd1/go.mod h1:bj7SfCRtBDWHUb9snDiAeCFNEtKQo2Wmx5Cou7ajbmo=
 golang.org/x/text v0.3.6/go.mod h1:5Zoc/QRtKVWzQhOtBMvqHzDpF6irO9z98xDceosuGiQ=
-golang.org/x/text v0.3.7 h1:olpwvP2KacW1ZWvsR7uQhoyTYvKAupfQrRGBFM352Gk=
 golang.org/x/text v0.3.7/go.mod h1:u+2+/6zg+i71rQMx5EYifcz6MCKuco9NR6JIITiCfzQ=
+golang.org/x/text v0.4.0 h1:BrVqGRd7+k1DiOgtnFvAkoQEWQvBc25ouMJM6429SFg=
+golang.org/x/text v0.4.0/go.mod h1:mrYo+phRRbMaCq/xk9113O4dZlRixOauAjOtrjsXDZ8=
 golang.org/x/tools v0.0.0-20180917221912-90fa682c2a6e/go.mod h1:n7NCudcB/nEzxVGmLbDWY5pfWTLqBcC2KZ6jyYvM4mQ=
 golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543 h1:E7g+9GITq07hpfrRu66IVDexMakfv52eLZ2CXBWiKr4=
 golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543/go.mod h1:I/5z698sn9Ka8TeJc9MKroUUfqBBauWjQqLJ2OPfmY0=

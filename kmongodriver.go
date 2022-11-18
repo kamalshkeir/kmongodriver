@@ -10,6 +10,7 @@ import (
 
 	"github.com/kamalshkeir/klog"
 	"github.com/kamalshkeir/kmap"
+	"github.com/kamalshkeir/kutils/kslice"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
@@ -421,4 +422,21 @@ func QueryOne[T any](ctx context.Context, table, selected string, whereFields ma
 		return *new(T), errors.New("no data found")
 	}
 	return v[0], nil
+}
+
+
+func ShutdownDatabases(databasesName ...string) error {
+	var newErr error
+	MMongoClients.Range(func(name string, cl *mongo.Client) {
+		if _,ok := kslice.Contains(databasesName, name);ok {
+			ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+			defer cancel()
+			err := cl.Disconnect(ctx)
+			if err != nil {
+				newErr = err
+			}
+			MMongoClients.Delete(name)
+		}
+	})
+	return newErr
 }
